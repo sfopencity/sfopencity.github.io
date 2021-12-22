@@ -1,3 +1,28 @@
+
+Creare a dir in your mac
+
+~/Documents/sfopencity_worspace
+
+git clone 
+git clone https://sfopencity@github.com/sfopencity/sfopencity.github.io
+
+You work on sfopencity_worspace/sfopencity.
+
+cd sfopencity_worspace/sfopencity
+
+start docker run --rm --label=jekyll --volume="$PWD:/srv/jekyll"  -itp 4000:4000 jekyll/jekyll jekyll serve --incremental
+
+Add post by adding a file in sfopencity_worspace/sfopencity/_posts/
+
+Copy an existing file, change title and date, change content. 
+modify and sive index.html in root to have it regenerate. 
+
+Every time  you modify someting it rigenerates and you can see result by poinint browser to 127.0.0.1:4000.
+
+When done, copy the static site that was generated in sfopencity_worspace/sfopencity/_site/ inside sfopencity_worspace/sfopencity.github.io/.
+
+push both
+
 # Derrick — Minimal Theme for Jekyll.
 
 Derrick is a clean minimal and fast theme for a personal blog.
